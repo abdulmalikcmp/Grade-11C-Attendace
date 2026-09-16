@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Dashboard — Grade 11C</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="app-header">
+    <div class="brand">
+      <img src="images/school-logo.png" alt="logo">
+      <div class="brand-text">
+        <h2>Rayhaan Model Academy</h2>
+        <span>Grade 11C</span>
+      </div>
+    </div>
+    <div class="user-controls">
+      <span id="welcomeText">Welcome</span>
+      <button class="btn-logout" id="logoutBtn">Logout</button>
+    </div>
+  </header>
+
+  <div class="container">
+
+    <div class="manager-banner">
+      <img src="images/abdulmalik.jpg" alt="Class Manager">
+      <div>
+        <h3>Mr. Abdulmalik Muhammad Yahaya</h3>
+        <p>Class Manager — Grade 11C</p>
+      </div>
+    </div>
+
+    <h3 class="section-title">👩‍🎓 Class Students</h3>
+    <div class="students-grid" id="studentsGrid">
+      <div class="empty-note">Loading students...</div>
+    </div>
+
+  </div>
+
+  <script src="config.js"></script>
+  <script src="dashboard.js"></script>
+</body>
+</html>
