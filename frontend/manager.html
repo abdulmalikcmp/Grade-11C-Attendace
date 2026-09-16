@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Manager Dashboard — Grade 11C</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="app-header">
+    <div class="brand">
+      <img src="images/school-logo.png" alt="logo">
+      <div class="brand-text">
+        <h2>Rayhaan Model Academy</h2>
+        <span>Grade 11C — Manager View</span>
+      </div>
+    </div>
+    <div class="user-controls">
+      <span id="welcomeText">Welcome</span>
+      <button class="btn-logout" id="logoutBtn">Logout</button>
+    </div>
+  </header>
+
+  <div class="container">
+
+    <div class="manager-banner">
+      <img src="images/abdulmalik.jpg" alt="Class Manager">
+      <div>
+        <h3>Mr. Abdulmalik Muhammad Yahaya</h3>
+        <p>Class Manager — Grade 11C</p>
+      </div>
+    </div>
+
+    <h3 class="section-title">📊 Today's Summary</h3>
+    <div class="summary-grid" id="summaryGrid">
+      <div class="stat-card"><div class="num">—</div><div class="label">Total Students</div></div>
+      <div class="stat-card present"><div class="num">—</div><div class="label">Present Today</div></div>
+      <div class="stat-card absent"><div class="num">—</div><div class="label">Absent Today</div></div>
+      <div class="stat-card"><div class="num">—</div><div class="label">Attendance %</div></div>
+    </div>
+
+    <h3 class="section-title">👩‍🎓 Students — Today</h3>
+    <div class="students-grid" id="studentsGrid">
+      <div class="empty-note">Loading...</div>
+    </div>
+
+    <h3 class="section-title">📅 Attendance History</h3>
+    <div class="filter-row">
+      <input type="date" id="dateFilter">
+      <button class="btn-small" id="filterBtn">Filter by Date</button>
+      <button class="btn-small ghost" id="clearFilterBtn">Show All</button>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Student</th><th>Date</th><th>Time</th><th>Status</th></tr>
+        </thead>
+        <tbody id="historyBody">
+          <tr><td colspan="4" class="empty-note">Loading...</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3 class="section-title">📈 Attendance Percentage</h3>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Student</th><th>Days Present</th><th>Percentage</th></tr>
+        </thead>
+        <tbody id="statsBody">
+          <tr><td colspan="3" class="empty-note">Loading...</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+
+  <script src="config.js"></script>
+  <script src="manager.js"></script>
+</body>
+</html>
