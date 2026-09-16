@@ -1,0 +1,22 @@
+{
+  "name": "grade11c-attendance",
+  "version": "1.0.0",
+  "description": "Grade 11C Class Attendance Management System - Rayhaan Model Academy",
+  "main": "backend/server.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "dev": "node backend/server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "express-session": "^1.18.0",
+    "sqlite3": "^5.1.7",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+    
+  }
+  
+}
