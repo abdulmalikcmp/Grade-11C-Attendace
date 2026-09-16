@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rayhaan Model Academy — Grade 11C Attendance</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="auth-page">
+
+  <div class="auth-card">
+    <div class="auth-header">
+      <img src="images/school-logo.png" alt="Rayhaan Model Academy logo" class="logo">
+      <h1>RAYHAAN MODEL ACADEMY</h1>
+      <p>GRADE 11C ATTENDANCE SYSTEM</p>
+    </div>
+
+    <div class="tabs">
+      <button class="tab-btn active" data-tab="login">Login</button>
+      <button class="tab-btn" data-tab="signup">Sign Up</button>
+    </div>
+
+    <div id="alertBox" class="alert"></div>
+
+    <!-- LOGIN FORM -->
+    <div class="form-panel active" id="loginPanel">
+      <form id="loginForm">
+        <div class="form-group">
+          <label for="loginEmail">Username or Email</label>
+          <input type="email" id="loginEmail" placeholder="e.g. maryam@rayhaan.edu" required>
+        </div>
+        <div class="form-group">
+          <label for="loginPassword">Password</label>
+          <input type="password" id="loginPassword" placeholder="Enter your password" required>
+        </div>
+        <button type="submit" class="btn-primary">Login</button>
+      </form>
+      <div class="link-row">
+        <button type="button" class="linklike" id="forgotBtn">Forgot Password?</button>
+      </div>
+    </div>
+
+    <!-- SIGN UP FORM -->
+    <div class="form-panel" id="signupPanel">
+      <form id="signupForm">
+        <div class="form-group">
+          <label for="signupRole">I am a</label>
+          <select id="signupRole">
+            <option value="student">Student</option>
+            <option value="manager">Class Manager</option>
+          </select>
+        </div>
+
+        <div class="form-group" id="studentNameGroup">
+          <label for="studentName">Select Your Name</label>
+          <select id="studentName">
+            <option value="Maryam">Maryam</option>
+            <option value="Fatima">Fatima</option>
+            <option value="Safiyya">Safiyya</option>
+            <option value="Juwairiyya">Juwairiyya</option>
+          </select>
+        </div>
+
+        <div class="form-group" id="managerNameGroup" style="display:none;">
+          <label for="managerName">Full Name</label>
+          <input type="text" id="managerName" value="Mr. Abdulmalik Muhammad Yahaya">
+        </div>
+
+        <div class="form-group">
+          <label for="signupEmail">Email</label>
+          <input type="email" id="signupEmail" placeholder="e.g. maryam@rayhaan.edu" required>
+        </div>
+        <div class="form-group">
+          <label for="signupPassword">Password</label>
+          <input type="password" id="signupPassword" placeholder="At least 6 characters" required minlength="6">
+        </div>
+        <button type="submit" class="btn-primary">Create Account</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="config.js"></script>
+  <script src="auth.js"></script>
+</body>
+</html>
